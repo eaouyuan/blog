@@ -3,6 +3,8 @@
 @section('title','排行榜12311')
 
 @section('content')
+
+
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card">
