@@ -214,7 +214,9 @@ return [
     'middleware_class' => [
         App\Http\Middleware\CheckIfAdmin::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
-        // \Backpack\CRUD\app\Http\Middleware\UseBackpackAuthGuardInsteadOfDefaultAuthGuard::class,
+        \App\Http\Middleware\AdminMiddleware::class,
+        // \crud\src\app\Http\Middleware\UseBackpackAu thGuardInsteadOfDefaultAuthGuard::class,
+        // vendor\backpack\crud\src\app\Http\Middleware\UseBackpackAuthGuardInsteadOfDefaultAuthGuard.php
     ],
 
     // Alias for that middleware
